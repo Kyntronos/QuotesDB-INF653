@@ -14,7 +14,7 @@
 
     //Get ID
 
-    $Quote->id = isset($_GET['id']) ? $_GET['id'] : die();
+    $Quote->id = isset($_GET['id']) ? $_GET['id'] : print_r(json_encode(array('message' => 'No quote found.')));
 
     //Get post
     $Quote->read_single();
