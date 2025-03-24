@@ -26,7 +26,7 @@
 
     //Check if category exists
     if ($Category->category === null || $Category->id === null) {
-        echo json_encode(array('message' => 'category_id Not Found.'));
+        echo json_encode(array('message' => 'category_id Not Found'));
         exit();
     }
 
