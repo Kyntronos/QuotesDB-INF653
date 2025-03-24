@@ -18,33 +18,6 @@
     $data = json_decode(file_get_contents('php://input'));
 
     //$Quote->id = $data->id;
-    if (!empty($data->quote) && !empty($data->author_id) && !empty($data->category_id)) {
-        $Quote->quote = $data->quote;
-        $Quote->author_id = $data->author_id;
-        $Quote->category_id = $data->category_id;
-    
-        //Create post
-        if ($Quote->create()) {
-            echo json_encode(
-                array(
-                    'id' => $Quote->id,
-                    'quote' => $Quote->quote,
-                    'author_id' => $Quote->author_id,
-                    'category_id' => $Quote->category_id
-                )
-            );
-        } else {
-            echo json_encode(
-                array('message' => "Post Not Created")
-            );
-        }
-    } else {
-        echo json_encode(
-            array('message' => 'Missing Required Parameters')
-        );
-    }
-    
-    /*
     $Quote->quote = $data->quote;
     $Quote->author_id = $data->author_id;
     $Quote->category_id = $data->category_id;
@@ -66,3 +39,4 @@
             array('message' => "Post Not Created")
         );
     }
+    
