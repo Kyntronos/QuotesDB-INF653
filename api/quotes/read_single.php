@@ -26,7 +26,7 @@
 
     //Check if quote exists
     if ($Quote->quote === null || $Quote->author_id === null || $Quote->category_id === null) {
-        echo json_encode(array('message' => 'No Quotes Found.'));
+        echo json_encode(array('message' => 'No Quotes Found'));
         exit();
     }
 
