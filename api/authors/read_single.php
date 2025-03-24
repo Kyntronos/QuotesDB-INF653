@@ -26,7 +26,7 @@
 
     //Check if category exists
     if ($Author->author === null || $Author->id === null) {
-        echo json_encode(array('message' => 'author_id Not Found.'));
+        echo json_encode(array('message' => 'author_id Not Found'));
         exit();
     }
 
