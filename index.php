@@ -6,4 +6,4 @@ if (basename($_SERVER['PHP_SELF']) !== 'index.php') {
 }
 
 // Show your message
-echo "Mid-term Proj: REST API";
+echo "Mid-term Proj: REST API - KyleCassity";
