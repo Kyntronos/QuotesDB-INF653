@@ -45,9 +45,9 @@
                 
             )
         );
-    } /* else {
+    }  else {
         echo json_encode(
             array('message' => "No Quotes Found")
         );
     }
-    */
+    
