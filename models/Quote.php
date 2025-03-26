@@ -133,7 +133,7 @@
             // If the author_id doesn't exist, return an error message
             if ($stmt->rowCount() == 0) {
                 echo json_encode(array('message' => 'author_id Not Found'));
-                return false;
+                exit;
             }
 
             $category_check_query = "SELECT id FROM categories WHERE id = :category_id LIMIT 1";
@@ -144,7 +144,7 @@
             // If the author_id doesn't exist, return an error message
             if ($stmt->rowCount() == 0) {
                 echo json_encode(array('message' => 'category_id Not Found'));
-                return false;
+                exit;
             }
 
             
